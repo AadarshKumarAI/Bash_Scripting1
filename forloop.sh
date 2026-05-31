@@ -11,6 +11,7 @@ do
 	touch $1$i.txt
 	git add .
 	git commit -m "add text file $1$i.txt"
+	git push -uf origin main
 done
-git push -uf origin main
+rm -rf *.txt
 
