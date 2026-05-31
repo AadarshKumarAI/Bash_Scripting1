@@ -9,7 +9,7 @@ task
 for (( i=$2 ; i<=$3; i++ )); 
 do
 	touch $1$2.txt && git add . && git commit -m "adding $1$2.txt file" 
-	git push -u origin main
+	git push -fu origin main
 done
-git pull -u origin main
+
 
