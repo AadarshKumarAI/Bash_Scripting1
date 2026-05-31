@@ -8,9 +8,8 @@ task
 
 for (( i=$2 ; i<=$3; i++ )); 
 do
-	touch $1$2 && git add . && git commit -m "adding $1$2.txt file" 
+	touch $1$2.txt && git add . && git commit -m "adding $1$2.txt file" 
 	git push -u origin main
 done
-rm -rf *.txt
 git pull -u origin main
 
